@@ -4,10 +4,11 @@ EXE = $(GEN:%.c=%)
 REPS = 1000000000
 NUM_REPS = 10
 
-default: $(RES)
+default: $(RES) clean
 
 %.res:
 	./compile.sh $(@:%.res=%) $(REPS) $(NUM_REPS) > $@
 
 clean:
-	@rm $(wildcard *.res) $(EXE)
+	./average.py
+	@rm $(RES) $(EXE)

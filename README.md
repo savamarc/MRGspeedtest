@@ -10,6 +10,7 @@ make mrg59k3a.res
 ```
 
 Results for different processors and architectures:
+
 | CPU | OS | Architecture | Compiler | Misc. | lcg16 | mrg16_1 | mrg16_2 | mrg16_3 | mrg8 |
 |:---:|:--:|:------------:|:--------:|:-----:|:-----:|:-------:|:-------:|:-------:|:----:|
 | i5-7200U | Linux 5.3.15-138 | x86_64 (64 bits) | gcc 9.2.0 | - |

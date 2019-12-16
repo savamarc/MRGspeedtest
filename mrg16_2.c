@@ -7,8 +7,8 @@ static uint32_t x1 = 1;
 static uint32_t x2 = 1;
 static uint32_t x3 = 1;
 static uint32_t x4 = 1;
-#define a1 31303
-#define a4 46098
+#define a1 32907
+#define a4 17770
 #define MOD 65521
 #define NORM 1.5262e-5
 

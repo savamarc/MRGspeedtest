@@ -4,12 +4,13 @@
 
 /* The current state of the generator. */
 static uint16_t s = 1;
-#define MULT 12253
+#define MULT 53283
 #define MOD 65536
+#define CONST 12345
 #define NORM 1.5259e-5
 
 static double inline next(void) {
-  s *= MULT;
+  s = s*MULT + CONST;
   return s*NORM;
 }
 

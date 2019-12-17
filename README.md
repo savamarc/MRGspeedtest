@@ -11,8 +11,8 @@ make mrg59k3a.res
 
 Results for different processors and architectures:
 
-| CPU | OS | Architecture | Compiler | Misc. | lcg16 | mrg16_1 | mrg16_2 | mrg16_3 | mrg8 |
-|:---:|:--:|:------------:|:--------:|:-----:|:-----:|:-------:|:-------:|:-------:|:----:|
-| i5-7200U | Linux 5.3.15-138 | x86_64 (64 bits) | gcc 9.2.0 | - |
+| CPU | OS | Architecture | Compiler | Misc. | lcg16 | mrg16_1 | mrg16_2 | mrg16_3 | mrg8 | mrg59k3a | mrg59p2a | mrg59p2b | mrg59p3c |
+|:---:|:--:|:------------:|:--------:|:-----:|:-----:|:-------:|:-------:|:-------:|:----:|:--------:|:--------:|:--------:|:--------:|
+| i5-7200U | Linux 5.3.15-138 | x86_64 (64 bits) | gcc 9.2.0 | - | 1.650 | 12.827 | 6.980 | 9.900 | 6.123 | 10.495 | 11.694 | 14.286 | 16.553 |
 | i7-2600 |
 | SDM845| Linux 4.9.165 | aarch64 | clang 8.0.1 | Termux on Pixel 3 |

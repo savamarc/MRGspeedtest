@@ -1,6 +1,7 @@
 Simple MRG speed tests using Vigna's harness. This is here mostly to share
-between computers and test on different architectures. Make will run all
-generators. Check parameters before runing, numbers can be a bit high.
+between computers and test on different architectures. Calling `make` runs all
+the generators for 10^9 numbers 10 times, averages the times and prints the
+results. Check parameters before runing, numbers can be a bit high.
 
 Example usages:
 ```
@@ -9,7 +10,7 @@ make mrg59k3a.res
 ./compile.sh mrg59k3a 1000000 5
 ```
 
-Results for different processors and architectures:
+Results for different processors and architectures (average of 10 runs for 10^9 numbers, Raspberry Pi uses 10\*average for 10^8 numbers):
 
 | CPU | OS | Architecture | Compiler | Misc. | lcg16 | mrg16_1 | mrg16_2 | mrg16_3 | mrg8 | mrg59k3a | mrg59p2a | mrg59p2b | mrg59p3c | mrg31k3p_original | mrg31k3p_fast | mrg32k3a_double | mrg32k3a_vigna |
 |:---:|:--:|:------------:|:--------:|:-----:|:-----:|:-------:|:-------:|:-------:|:----:|:--------:|:--------:|:--------:|:--------:|:-----------------:|:-------------:|:---------------:|:--------------:|

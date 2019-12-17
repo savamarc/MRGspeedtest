@@ -1,13 +1,18 @@
 #!/usr/bin/python3
 import os
+gen = ['lcg16', 'mrg16_1', 'mrg16_2', 'mrg16_3', 'mrg8', 'mrg59k3a', 'mrg59p2a',
+        'mrg59p2b', 'mrg59p2c', 'mrg32k3a_double', 'mrg32k3a_vigna',
+        'mrg31k3p_original', 'mrg31k3p_fast']
 
 with open("results.txt", "w+") as results:
     files = os.listdir()
-    for res in files:
-        if '.res' not in res:
+    for res in gen:
+        content = None
+        try:
+            content = open(res+'.res').read()
+        except:
+            print("No file " + res + '.res')
             continue
-        content = open(res).read()
-        genname = res[:-4]
         # print(genname)
         content = content.split()
         # print(content)
@@ -23,7 +28,7 @@ with open("results.txt", "w+") as results:
                 if i%9 == 1:
                     total += float(content[i])
                     num += 1
-        results.write(genname)
+        results.write(res)
         if len(genname) < 20:
             for i in range(20-len(genname)):
                 results.write(' ')

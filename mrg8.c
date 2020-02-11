@@ -34,7 +34,7 @@ static double inline next(void) {
   x2 = x1;
   x1 = tmp;
 
-  return (tmp+1)*NORM2;
+  return tmp*NORM;
 }
 
 #ifndef INIT

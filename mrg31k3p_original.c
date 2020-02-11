@@ -9,7 +9,7 @@
 #define mask13 16777215
 #define mask21 65535
 
-uint64_t x10, x11, x12, x20, x21, x22;
+uint32_t x10, x11, x12, x20, x21, x22;
 
 void init(void) {
   srand(time(NULL));
@@ -22,7 +22,7 @@ void init(void) {
 }
 
 double next (void) {
-  uint64_t y1, y2; /* For intermediate results */
+  uint32_t y1, y2; /* For intermediate results */
   /* First component */
   y1 = (((x11 & mask12) << 22) + (x11 >> 9))
     + (((x12 & mask13) << 7) + (x12 >> 24));
